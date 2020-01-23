@@ -1,0 +1,407 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    width: 100%;
+    background-image: url('images/bg-page.png');
+    background-size: cover;
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#bodybox
+{
+    overflow: hidden;
+}
+#loginbox
+{
+    width: 300px;
+    height: 280px;
+    margin: 15% auto;
+    box-shadow: rgb(39, 168, 185);
+}
+#inputs
+{
+    height: 200px;
+    text-align: center;
+    background-color: rgba(34, 34, 34, 0.85);
+    border-bottom: 1px solid teal;
+    border-radius: 2px;
+}
+.Linput
+{
+    width: 250px;
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: none;
+    font-size: 12pt;
+    border-radius: 2px;
+}
+#loginbutton
+{
+    height: 40px;
+    background-color: rgb(0, 83, 83);
+    transition: 0.4s ease;
+    color: white;
+}
+#loginbutton:hover
+{
+    transition: 0.4s;
+    background-color: rgb(0, 158, 158);
+    animation-direction: alternate;
+}
+input
+{
+    outline: none;
+}
+#feedback
+{  
+    font-family: Arial, Helvetica, sans-serif;
+    height: 45px;
+    background-color: rgb(41, 147, 161);   
+    text-align: center;
+    color: #bb0000;
+    padding-top: 20px;
+    outline: none;
+ }
+#logout
+{
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 50px;
+	height: 50px;
+	float: left;
+	background-color: rgba(500, 500, 500, 0.1);
+	border-radius: 100%;
+	transition: 0.4;
+}
+#powerbutton
+{
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 40px;
+	margin: 5px;
+}
+#logout:hover
+{
+	background-color: rgba(500, 500, 500, 0.4);
+	transition: 0.4 ease-in-out;
+}
+.container
+{
+	height: 100%;
+	max-width: 630px;
+	min-width: 200px;
+	margin: 0 auto;
+	padding-top: 100px;
+	text-align: center;
+	transition: 0.5s;
+}
+@media(max-width: 650px)
+{
+	.container
+	{
+		-webkit-transition-: 2s;
+		width: 200px;
+		transition: 1s;
+	}
+}
+.box
+{
+	width: 200px;
+	height: 250px;
+	background-color: rgba(19, 19, 19, 0.9);
+	float: left;
+	margin: 5px;
+	border-radius: 2px;
+	font-size: 16pt;
+}
+.box:hover
+{
+	background-color: rgba(34, 34, 34, 0.85);
+}
+.box .details .buttonimg
+{
+	font-size: 80px;
+}
+.buttontext
+{
+	width: auto;
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(243, 243, 243);
+	opacity: 0;
+	padding: 7px;
+	transition: 0.2s;
+	animation-direction: alternate-reverse;
+	font-size: 1pt;
+	border: 2px solid rgb(199, 199, 199);
+	border-radius: 2.5px;
+	margin-top: 15px;
+}
+.box:hover .buttontext
+{
+	opacity: 1;
+	transition: 0.2s;
+	font-size: 10pt;
+}
+.buttontext:hover
+{
+	color: black;
+	background-color: white;
+	border: 2px solid black;
+	transition: 0.2;
+}
+.details
+{
+	width: 100%;
+	margin: 60px auto 0 auto;
+	transition: 0.2s;
+	outline: none;
+}
+.box:hover .details
+{
+	margin: 17% auto;
+	transition: 0.2s;
+}
+a
+{
+	color: black;
+	text-decoration: none;
+	animation: ease-in-out;
+}
+i
+{
+	margin-bottom: 10px;
+}
+.content
+{
+	color: white;
+}
+#backarrow
+{
+	width: 100%;
+	height: 50px;
+	text-align: left;
+}
+#backarrowbutton
+{
+	float: left;
+	width: 50px;
+	height: 50px;
+	text-align: left;
+	padding: 9px 13px;
+	border-radius: 100%;
+	border: none;
+	color: rgb(95, 95, 95);
+	background-color: rgba(500, 500, 500, 0.1);
+	font-size: 20pt;
+	transition: 0.3 ease-in-out;
+	margin-top: -20px;
+}
+#logobox1 
+{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 80px;
+	height: 50px;
+	background-image: url('images/logo.png');
+	background-size: cover;
+	transition: 1s;
+	animation-direction: alternate;
+}
+@media (max-width: 800px)
+{
+	#logobox1 
+	{
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		width: 40px;
+		height: 40px;
+		background-image: url('images/logomobile.png');
+		background-size: cover;
+		transition: 1s;
+		animation-direction: alternate;
+	}
+	#backarrowbutton
+	{
+		position: fixed;
+		width: 50px;
+		height: 50px;
+		text-align: left;
+		padding: 9px 13px;
+		border-radius: 100%;
+		border: none;
+		right: 20px;
+		top: 45px;
+		color: rgb(95, 95, 95);
+		background-color: rgba(500, 500, 500, 0.1);
+		font-size: 20pt;
+		transition: 0.3 ease-in-out;
+	}
+	#backarrowbutton:hover
+	{
+		background-color: rgba(500, 500, 500, 0.4);
+		transition: 0.4 ease-in-out;
+		color: gray;
+		cursor: pointer;
+	}
+}
+#backarrowbutton:hover
+{
+	background-color: rgba(500, 500, 500, 0.4);
+	transition: 0.4 ease-in-out;
+	color: gray;
+	cursor: pointer;
+}
+h2
+{
+	font-size: 18pt;
+	padding: 5px;
+	margin-top: 0;
+}
+.currentpage
+{
+	float: left;
+	margin-left: 20px; 
+	color: rgb(255, 255, 255);
+	font-size: 18pt;
+	font-weight: bolder;
+	margin-top: -5px;
+}
+#container1
+{
+	height: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding-top: 100px;
+	text-align: center;
+	transition: 0.5s;
+}
+#bigtextbox
+{
+	width: 100%;
+	margin: 0 auto 40px auto;
+	height: fit-content;
+	background-color: rgba(19, 19, 19, 0.9);
+	overflow: hidden;
+	border-radius: 3px;
+}
+#usertitle
+{
+	margin-top: 40px;
+	color: white;
+	font-size: 30pt;
+	font-weight: bold;
+}
+#formbox
+{
+	margin-top: 30px;
+}
+#userfeedback
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 18pt;
+	font-weight: bolder;
+	color: rgb(123, 184, 123);
+}
+#displaybox
+{
+	width: calc(100% - 60px);
+	height: calc(100% - 130px);
+	margin: 30px auto;
+	border-radius: 3px;
+	background-color: rgba(500, 500, 500, 0.4);
+}
+#description
+{
+	width: 250px;
+	min-width: 200px;
+	max-width: 400px;
+	height: 50px;
+	min-height: 50px;
+	max-height: 400px;
+    padding: 10px 10px 0 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: none;
+    font-size: 12pt;
+    border-radius: 2px;
+}
+#content-box
+{
+	width: calc(100% - 75px);
+	margin: 25px auto;
+	padding: 10px;
+	text-align: justify;
+	background-color: rgb(255, 255, 255, 0.8);
+	border-radius: 2px;
+	transition: 0.2s;
+}
+p
+{
+	color: black;
+	margin: 10px 0;
+}
+.email
+{
+	height:45px;
+    display:table-cell;
+    vertical-align : middle;
+}
+.goodfeedback
+{
+	color: green;
+}
+.badfeedback
+{
+	color: #bb0000;
+}
+table 
+{
+    border-collapse: collapse;
+	padding:5px;
+	width: 100%;
+}
+
+th, td 
+{
+    border-bottom:1px solid black;
+    padding:10px;
+    text-align: center;
+}
+
+tr:hover
+{
+    background-color: rgb(224,224,224, 0.5);
+}
+
+.tddelete:hover, .tablelink:hover
+{
+	background-color: rgba(233, 233, 233, 0.5);
+}
+
+.inputoption
+{
+	border: none;
+	-webkit-appearanace: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: rgb(500, 500, 500, 0.4);
+	text-align: middle;
+	padding: 5px;
+}
+a
+{
+	outline: none;
+}
